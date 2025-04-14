@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Gabriel Carvalho | Portfolio</title>
+</head>
+
+<body>
+    <header class="w-full backdrop-blur-sm bg-black/5 w-full z-50 text-white transition fixed">
+
+        <nav
+            class="container mx-auto flex flex-col md:flex-row justify-between items-start md:items-center py-4 px-10 relative">
+            <div class="flex w-full justify-between items-center">
+                <a href="index.html"
+                    class="text-3xl font-semibold hover:text-pink-400 transition-color ease-in-out duration-300 active:text-pink-500 hover:scale-110">
+                    Gabriel
+                </a>
+                <button id="menuToggle"
+                    class="md:hidden text-white text-3xl cursor-pointer hover:text-pink-400 hover:scale-110 duration-300 active:text-pink-500">
+                    ☰
+                </button>
+            </div>
+
+            <!-- Desktop menu -->
+            <ul id="navMenu" class="hidden md:flex space-x-12 font-normal text-lg mt-4 md:mt-0">
+                <li
+                    class="hover:text-pink-400 transition duration-300 hover:underline active:text-pink-500 hover:scale-110">
+                    <a href="#projects">&lt;Projects/&gt;</a>
+                </li>
+                <li
+                    class="hover:text-pink-400 transition duration-300 hover:underline active:text-pink-500 hover:scale-110">
+                    <a href="#about">&lt;About/&gt;</a>
+                </li>
+                <li
+                    class="hover:text-pink-400 transition duration-300 hover:underline active:text-pink-500 hover:scale-110">
+                    <a href="#contact">&lt;Contact/&gt;</a>
+                </li>
+            </ul>
+
+            <!-- Mobile menu -->
+            <div id="mobileMenu" class="hidden md:hidden w-full mt-4">
+                <ul class="space-y-4 text-center py-4 bg-opacity-80 rounded-lg shadow-lg">
+                    <li><a href="#projects" class="block text-white hover:text-pink-400">&lt;Projects/&gt;</a></li>
+                    <li><a href="#about" class="block text-white hover:text-pink-400">&lt;About/&gt;</a></li>
+                    <li><a href="#contact" class="block text-white hover:text-pink-400">&lt;Contact/&gt;</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <div class="parallax-container">
+        <div class="fixed inset-0 z-5 flex flex-col items-center justify-center text-center text-pink-100"
+            data-aos="fade-up">
+            <h1
+                class="font-bold text-[clamp(2rem,8vw,6rem)] hover:scale-105 duration-300 cursor-pointer active:scale-110">
+                Gabriel Carvalho</h1>
+            <h2 class="text-[clamp(1rem,3.2vw,2.4rem)] hover:scale-105 duration-300 cursor-pointer">Full-Stack Developer
+            </h2>
+        </div>
+        <div class="layer" id="sky"></div>
+        <div class="stars-layer" id="stars"></div>
+        <div class="layer" id="sun" data-depth="0.3"></div>
+        <div class="layer" id="mountains" data-depth="0.3"></div>
+        <div class="layer" id="ground" data-depth="0.3"></div>
+    </div>
+    <div class="scroll-content">
+        <div class="container mx-auto py-20">
+            <h1 class="text-4xl mb-14 font-semibold" id="projects">Projects</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Card 1 -->
+                <div class="group relative overflow-hidden rounded-2xl cursor-pointer hover:scale-105 duration-300">
+                    <a href="https://github.com/gabriel-hc-dev/Chrysalisphp2" target="_blank">
+                        <img class="w-full aspect-[4/3] object-cover transition duration-300 group-hover:opacity-70"
+                            src="src/php.jpeg" alt="">
+                        <div
+                            class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-60 opacity-0 group-hover:opacity-95 transition duration-300 hover:scale-105">
+                            <p class="text-white text-xl font-semibold">Chrysalis</p>
+                            <p class="text-white text-xl mt-2 mx-14 text-justify">Chrysalis is a clothing store system
+                                that blends
+                                high-quality fashion with affordable pricing, offering a simple and efficient way to
+                                manage products and orders.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="group relative overflow-hidden rounded-2xl cursor-pointer hover:scale-105 duration-300">
+                    <a href="https://github.com/gabriel-hc-dev/passwordgenerator" target="_blank">
+                        <img class="w-full aspect-[4/3] object-cover transition duration-300 group-hover:opacity-70"
+                            src="src/password.jpeg" alt="">
+                        <div
+                            class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-0 opacity-0 group-hover:opacity-95 transition duration-300 hover:scale-105">
+                            <p class="text-white text-xl font-semibold">Password Generator</p>
+                            <p class="text-white text-xl mt-2 mx-14 text-justify">This is a system that generates a
+                                random password based on the number of characters provided by the user.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="group relative overflow-hidden rounded-2xl cursor-pointer hover:scale-105 duration-300">
+                    <a href="https://github.com/gabriel-hc-dev/SistemaCrud" target="_blank">
+                        <img class="w-full aspect-[4/3] object-cover transition duration-300 group-hover:opacity-70"
+                            src="src/crud.jpeg" alt="">
+                        <div
+                            class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-60 opacity-0 group-hover:opacity-95 transition duration-300 hover:scale-105">
+                            <p class="text-white text-xl font-semibold">Crud System</p>
+                            <p class="text-white text-xl mt-2 mx-14 text-justify">This is a simple CRUD (Create, Read, Update, Delete) for managing products and stores.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="group relative overflow-hidden rounded-2xl cursor-pointer hover:scale-105 duration-300">
+                    <a href="https://github.com/gabriel-hc-dev/landingPageAilton" target="_blank">
+                        <img class="w-full aspect-[4/3] object-cover transition duration-300 group-hover:opacity-70"
+                            src="src/landingpage.jpeg" alt="">
+                        <div
+                            class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-60 opacity-0 group-hover:opacity-95 transition duration-300 hover:scale-105">
+                            <p class="text-white text-xl font-semibold">Landing Page Ailton</p>
+                            <p class="text-white text-xl mt-2 mx-14 text-justify">This is a landing page created for a Brazilian gospel musician called Ailton.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container mx-auto py-20">
+            <h2 class="text-4xl font-semibold" id="about">About</h2>
+            <p>Informações sobre você...</p>
+        </div>
+
+        <div class="container mx-auto py-20">
+            <h2 class="text-4xl font-semibold" id="contact">Contact</h2>
+            <p>Formas de contato...</p>
+        </div>
+    </div>
+    </div>
+
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const toggle = document.getElementById('menuToggle');
+            const menu = document.getElementById('mobileMenu');
+
+            if (toggle && menu) {
+                toggle.addEventListener('click', () => {
+                    menu.classList.toggle('hidden');
+                });
+            }
+
+            const stars = document.getElementById("stars");
+            const parallaxLayers = document.querySelectorAll(".layer[data-depth]");
+
+            let mouseX = 0;
+            let mouseY = 0;
+
+            // Movimento das estrelas com o mouse
+            document.addEventListener("mousemove", (e) => {
+                mouseX = (e.clientX / window.innerWidth - 0.5) * 2;
+                mouseY = (e.clientY / window.innerHeight - 0.5) * 2;
+
+                // Aplica movimento apenas para as estrelas
+                const moveX = mouseX * 50;
+                const moveY = mouseY * 50;
+                stars.style.transform = `translate3d(${moveX}px, ${moveY}px, 0)`;
+            });
+
+            // Parallax por scroll para todas as camadas exceto estrelas
+            window.addEventListener("scroll", () => {
+                const scrollY = window.scrollY;
+
+                parallaxLayers.forEach((layer) => {
+                    const depth = parseFloat(layer.getAttribute("data-depth"));
+                    const moveY = scrollY * depth;
+                    layer.style.transform = `translate3d(0, ${moveY}px, 0)`;
+                });
+            });
+        });
+
+    </script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
