@@ -1,9 +1,17 @@
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     height: 100%;
     font-family: 'Montserrat', sans-serif;
     background-color: rgb(17, 2, 61);
+}
+
+::selection {
+    background-color: rgb(185, 52, 121);
+    /* cor de fundo da seleção */
+    color: #ffffff;
+    /* cor do texto selecionado */
 }
 
 /* Parallax container */
