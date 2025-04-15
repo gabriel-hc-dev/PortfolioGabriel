@@ -4,11 +4,30 @@ html {
     padding: 0;
     height: 100%;
     font-family: 'Montserrat', sans-serif;
-    background-color: rgb(17, 2, 61);
+    background-color: #11023d;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #11023d;
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #ff4eb5;;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid #11023d;
+    /* creates padding around scroll thumb */
 }
 
 ::selection {
-    background-color: rgb(185, 52, 121);
+    background-color: #ff4eb5;;
     /* cor de fundo da seleção */
     color: #ffffff;
     /* cor do texto selecionado */
@@ -87,4 +106,13 @@ html {
     color: white;
     padding: 2rem;
     min-height: 100vh;
+}
+
+span {
+    font-weight: 600;
+    color: #4efaff;
+}
+
+.tag {
+    color: #ff4eb5;
 }

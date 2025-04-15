@@ -28,8 +28,8 @@
             class="container mx-auto flex flex-col md:flex-row justify-between items-start md:items-center py-4 px-10 relative">
             <div class="flex w-full justify-between items-center">
                 <a href="index.html"
-                    class="text-3xl font-semibold hover:text-pink-400 transition-color ease-in-out duration-300 active:text-pink-500 hover:scale-110">
-                    Gabriel
+                    class="text-2xl font-semibold hover:text-pink-400 transition-color ease-in-out duration-300 active:text-pink-500 hover:scale-110">
+                    &lt;gabriel-hc-dev/&gt;
                 </a>
                 <button id="menuToggle"
                     class="md:hidden text-white text-3xl cursor-pointer hover:text-pink-400 hover:scale-110 duration-300 active:text-pink-500">
@@ -67,8 +67,7 @@
     <div class="parallax-container">
         <div class="fixed inset-0 z-5 flex flex-col items-center justify-center text-center text-pink-100"
             data-aos="fade-up">
-            <h1
-                class="font-bold text-[clamp(2rem,8vw,6rem)] hover:scale-105 duration-300 cursor-default">
+            <h1 class="font-bold text-[clamp(2rem,8vw,6rem)] hover:scale-105 duration-300 cursor-default leading-24">
                 Gabriel Carvalho</h1>
             <h2 class="text-[clamp(1rem,3.2vw,2.4rem)] hover:scale-105 duration-300 cursor-default">Full-Stack Developer
             </h2>
@@ -82,8 +81,8 @@
     <div class="scroll-content">
         <div class="container mx-auto">
             <div>
-                <h1 class="text-4xl my-10 font-semibold" id="projects" data-aos="fade-up">Projects</h1>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <h1 class="text-3xl my-10 font-normal tag" id="projects" data-aos="fade-up">&lt;projects&gt;</h1>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mx-12">
                     <!-- Card 1 -->
                     <div class="group relative overflow-hidden rounded-2xl cursor-pointer duration-300"
                         data-aos="fade-up">
@@ -151,6 +150,7 @@
                         </a>
                     </div>
                 </div>
+                <h1 class="text-3xl my-10 font-normal tag" id="projects" data-aos="fade-up">&lt;projects/&gt;</h1>
             </div>
 
 
@@ -158,29 +158,37 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     <div class="mt-6">
-                        <h2 class="text-4xl font-semibold mb-6" id="about">About</h2>
-                        <div data-aos="fade-up">
-                            <p class="text-2xl text-justify">Hi there! I'm Gabriel!</p>
-                            <p class="text-2xl text-justify">I'm a full-stack developer and a passionate enthusiast of
+                        <h2 class="text-3xl font-normal mb-12 tag" id="about" data-aos="fade-up">&lt;about&gt;</h2>
+                        <div class="mx-12" data-aos="fade-up">
+                            <p class="text-2xl text-justify mb-6">I'm a full-stack developer and a passionate enthusiast
+                                of
                                 technology and innovation.</p>
-                            <p class="text-2xl text-justify">I'm currently studying Science and Technology at UNIFESP,
+                            <p class="text-2xl text-justify mb-6">I'm currently studying Science and Technology at
+                                <span>UNIFESP</span>,
                                 and I
-                                plan to pursue Computer Science afterwards.</p>
-                            <p class="text-2xl text-justify">Outside of tech, I'm also a guitar player and I enjoy
+                                plan to pursue Computer Science afterward.</p>
+                            <p class="text-2xl text-justify mb-6">Outside of tech, I'm also a guitar player and I enjoy
                                 gaming
                                 whenever I find the time.</p>
+                            <p class="text-2xl text-justify mb-6">When it comes to development, I have experience with a
+                                variety of languages and tools across the stack.</p>
+                            <p class="text-2xl text-justify mb-6">For front-end, I work with <span>HTML5</span>,
+                                <span>CSS3</span>, <span>JavaScript</span> (basic level), and modern styling frameworks
+                                like <span>TailwindCSS</span> and <span>Bootstrap</span>.</p>
+                            <p class="text-2xl text-justify mb-6">On the back-end, I code in <span>Python</span>,
+                                <span>PHP</span>, <span>Java</span>, and <span>C</span>, and I’m comfortable working
+                                with <span>MySQL</span> for managing relational databases.</p>
                         </div>
+                        <h2 class="text-3xl font-normal mt-12 tag" id="about" data-aos="fade-up">&lt;about/&gt;</h2>
                     </div>
 
-                    <img class="w-full aspect-[5/4] object-cover rounded-2xl shadow-lg" src="src/eu.jpg"
-                        data-aos="fade-up">
-
+                    <img class="w-full object-cover rounded-2xl shadow-lg" src="src/eu.jpg" data-aos="fade-up">
                 </div>
             </div>
 
             <div class="container mx-auto py-20">
-                <h2 class="text-4xl font-semibold mb-6" id="contact" data-aos="fade-up">Contact</h2>
-                <div data-aos="fade-up">
+                <h2 class="text-3xl font-normal mb-10 tag" id="contact" data-aos="fade-up">&lt;contact&gt;</h2>
+                <div class="mx-12" data-aos="fade-up">
                     <p class="text-2xl text-justify" data-aos="fade-up">Feel free to reach out if you have any
                         questions,
                         project ideas, or
@@ -189,35 +197,46 @@
                         below — I'll get back
                         to you as soon as I can!</p>
                 </div>
-                <div class="mt-6 flex space-x-6 items-center" data-aos="fade-up">
+                <div class="mt-6 mx-12 flex space-x-6 items-center" data-aos="fade-up">
                     <a href="https://www.linkedin.com/in/gabriel-henrique-carvalho/" target="_blank"
                         aria-label="LinkedIn">
-                        <svg class="w-8 h-8 fill-white hover:opacity-80 transition" viewBox="0 0 24 24">
+                        <svg class="w-8 h-8 fill-white hover:fill-[#0A66C2] duration-300 ease-in-out transition"
+                            viewBox="0 0 24 24">
                             <path
                                 d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4V8zm7.5 0h3.8v2.2h.1c.5-.9 1.8-2.2 3.9-2.2 4.2 0 5 2.8 5 6.5V24h-4v-8.5c0-2-.1-4.5-2.7-4.5s-3.1 2.1-3.1 4.3V24h-4V8z" />
                         </svg>
                     </a>
 
                     <a href="https://github.com/gabriel-hc-dev" target="_blank" aria-label="GitHub">
-                        <svg class="w-8 h-8 fill-white hover:opacity-80 transition" viewBox="0 0 24 24">
+                        <svg class="w-8 h-8 fill-white hover:opacity-50 duration-300 ease-in-out transition"
+                            viewBox="0 0 24 24">
                             <path
                                 d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.438 9.8 8.205 11.385.6.11.82-.26.82-.577v-2.234c-3.338.727-4.033-1.61-4.033-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.082-.73.082-.73 1.205.084 1.84 1.24 1.84 1.24 1.07 1.835 2.807 1.305 3.492.998.108-.775.42-1.305.762-1.605-2.665-.3-5.467-1.335-5.467-5.935 0-1.31.467-2.38 1.235-3.22-.123-.303-.535-1.52.117-3.176 0 0 1.008-.322 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.553 3.297-1.23 3.297-1.23.653 1.656.24 2.873.117 3.176.77.84 1.233 1.91 1.233 3.22 0 4.61-2.807 5.63-5.48 5.92.432.373.816 1.106.816 2.23v3.31c0 .32.216.694.825.577C20.565 22.295 24 17.8 24 12.5 24 5.87 18.63.5 12 .5z" />
                         </svg>
                     </a>
 
                     <a href="https://www.instagram.com/gabriel.henrique_c/" target="_blank" aria-label="Instagram">
-                        <svg class="w-8 h-8 fill-white hover:opacity-80 transition" viewBox="0 0 24 24">
+                        <svg class="w-8 h-8 fill-white hover:fill-[#f472b6] transition duration-300 ease-in-out"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path
-                                d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.056 1.96.24 2.412.403a4.91 4.91 0 0 1 1.79 1.162 4.91 4.91 0 0 1 1.162 1.79c.163.452.347 1.242.403 2.412.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.056 1.17-.24 1.96-.403 2.412a4.91 4.91 0 0 1-1.162 1.79 4.91 4.91 0 0 1-1.79 1.162c-.452.163-1.242.347-2.412.403-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.056-1.96-.24-2.412-.403a4.91 4.91 0 0 1-1.79-1.162 4.91 4.91 0 0 1-1.162-1.79c-.163-.452-.347-1.242-.403-2.412C2.175 15.747 2.163 15.367 2.163 12s.012-3.584.07-4.85c.056-1.17.24-1.96.403-2.412a4.91 4.91 0 0 1 1.162-1.79 4.91 4.91 0 0 1 1.79-1.162c.452-.163 1.242-.347 2.412-.403C8.416 2.175 8.796 2.163 12 2.163zm0 1.838c-3.168 0-3.548.012-4.797.07-1.04.05-1.6.218-1.973.362a3.148 3.148 0 0 0-1.16.757 3.148 3.148 0 0 0-.757 1.16c-.144.373-.312.933-.362 1.973-.058 1.249-.07 1.63-.07 4.797s.012 3.548.07 4.797c.05 1.04.218 1.6.362 1.973.171.442.414.84.757 1.16.32.343.718.586 1.16.757.373.144.933.312 1.973.362 1.249.058 1.63.07 4.797.07s3.548-.012 4.797-.07c1.04-.05 1.6-.218 1.973-.362a3.148 3.148 0 0 0 1.16-.757 3.148 3.148 0 0 0 .757-1.16c.144-.373.312-.933.362-1.973.058-1.249.07-1.63.07-4.797s-.012-3.548-.07-4.797c-.05-1.04-.218-1.6-.362-1.973a3.148 3.148 0 0 0-.757-1.16 3.148 3.148 0 0 0-1.16-.757c-.373-.144-.933-.312-1.973-.362-1.249-.058-1.63-.07-4.797-.07zm0 3.838a5.999 5.999 0 1 0 0 12 5.999 5.999 0 0 0 0-12zm0 9.838a3.839 3.839 0 1 1 0-7.678 3.839 3.839 0 0 1 0 7.678zm6.406-10.845a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0z" />
+                                d="M7.75 2h8.5A5.76 5.76 0 0 1 22 7.75v8.5A5.76 5.76 0 0 1 16.25 22h-8.5A5.76 5.76 0 0 1 2 16.25v-8.5A5.76 5.76 0 0 1 7.75 2zm0 1.5A4.26 4.26 0 0 0 3.5 7.75v8.5A4.26 4.26 0 0 0 7.75 20.5h8.5A4.26 4.26 0 0 0 20.5 16.25v-8.5A4.26 4.26 0 0 0 16.25 3.5h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm5.75-.75a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>
+                    </a>
+                    <a href="mailto:gabriel.hc.dev@gmail.com" target="_blank" aria-label="Gmail">
+                        <svg class="w-8 h-8 fill-white hover:fill-[#D44638] transition duration-300 ease-in-out"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M20 4H4C2.897 4 2 4.897 2 6v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2v.511l-8 5.053-8-5.053V6h16zm0 12H4V8.722l8 5.053 8-5.053V18z" />
                         </svg>
                     </a>
                 </div>
-
+                <h2 class="text-3xl font-normal mt-10 tag" id="contact" data-aos="fade-up">&lt;contact/&gt;</h2>
             </div>
         </div>
     </div>
-
-
+    <footer class="text-center py-4">
+        <p class="text-white ">© 2025 Gabriel Carvalho. Todos os direitos reservados.</p>
+    </footer>
     <script>
 
         document.addEventListener("DOMContentLoaded", () => {
