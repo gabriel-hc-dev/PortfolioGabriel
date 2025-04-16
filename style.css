@@ -18,7 +18,8 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: #ff4eb5;;
+    background-color: #ff4eb5;
+    ;
     /* color of the scroll thumb */
     border-radius: 20px;
     /* roundness of the scroll thumb */
@@ -27,7 +28,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 ::selection {
-    background-color: #ff4eb5;;
+    background-color: #ff4eb5;
+    ;
     /* cor de fundo da seleção */
     color: #ffffff;
     /* cor do texto selecionado */
@@ -85,9 +87,6 @@ body::-webkit-scrollbar-thumb {
     pointer-events: auto;
 }
 
-#sun:hover {
-    transform: scale(1.1);
-}
 
 #mountains {
     background-image: url('src/Montanhas1920x1080.png');
