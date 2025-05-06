@@ -1,3 +1,4 @@
+
 body,
 html {
     margin: 0;
@@ -67,28 +68,26 @@ body::-webkit-scrollbar-thumb {
         blink-caret .75s step-end infinite;
 }
 
-/* Parallax container */
 .parallax-container {
     position: relative;
-    width: 100%;
+    width: 100vw;
+    max-width: 100%;
     height: 100vh;
     overflow: hidden;
-    max-width: 100vw;
 }
-/* Camadas parallax */
+
 .layer {
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    width: auto;
-    max-width: 100vw;
+    width: 100vw;
     height: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     pointer-events: none;
     will-change: transform;
+    overflow: hidden;
 }
 
 /* Camada especial para estrelas (não afetada pelo scroll) */
