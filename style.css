@@ -1,5 +1,6 @@
 body,
 html {
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -165,39 +166,4 @@ a[aria-label]:hover {
 
 a:hover {
     opacity: 0.9;
-}
-@media (max-width: 768px) {
-    #titulo {
-        font-size: 1.5rem;
-    }
-
-    .scroll-content {
-        padding: 1rem;
-    }
-
-    .parallax-container {
-        height: auto;
-        min-height: 100vh;
-    }
-
-    .layer,
-    .stars-layer,
-    #sky,
-    #sun,
-    #mountains,
-    #ground {
-        background-size: contain;
-        background-position: center top;
-    }
-
-    /* Se o sol estiver grande demais, ajuste o tamanho */
-    #sun {
-        background-size: 150%;
-    }
-
-    /* Evita que partes do background fiquem cortadas */
-    body,
-    html {
-        overflow-x: hidden;
-    }
 }
