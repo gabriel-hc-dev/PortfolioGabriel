@@ -4,7 +4,9 @@ html {
     padding: 0;
     height: 100%;
     font-family: 'Montserrat', sans-serif;
-    background-color: #11023d;
+    background: linear-gradient(0deg, #0b012b 0%, #11023d 40%, #1a0140 100%);
+
+
 }
 
 body::-webkit-scrollbar {
@@ -23,7 +25,7 @@ body::-webkit-scrollbar-thumb {
     /* color of the scroll thumb */
     border-radius: 20px;
     /* roundness of the scroll thumb */
-    border: 3px solid #11023d;
+    border: 3px solid #1a0140;
     /* creates padding around scroll thumb */
 }
 
@@ -33,6 +35,47 @@ body::-webkit-scrollbar-thumb {
     /* cor de fundo da seleção */
     color: #ffffff;
     /* cor do texto selecionado */
+}
+
+/* Efeito de digitação para o título */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: #ff4eb5
+    }
+}
+
+#titulo {
+    overflow: hidden;
+    white-space: nowrap;
+    animation:
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
 }
 
 /* Parallax container */
@@ -101,7 +144,9 @@ body::-webkit-scrollbar-thumb {
 .scroll-content {
     position: relative;
     z-index: 10;
-    background-color: rgb(17, 2, 61);
+    background: linear-gradient(160deg, #0b012b 0%, #11023d 40%, #1a0140 100%);
+
+
     color: white;
     padding: 2rem;
     min-height: 100vh;
@@ -114,4 +159,23 @@ span {
 
 .tag {
     color: #ff4eb5;
+}
+
+/* Efeito de hover suave para links */
+a {
+    transition: all 0.3s ease;
+}
+
+/* Botões de contato */
+a[aria-label] {
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+a[aria-label]:hover {
+    transform: scale(1.2) translateY(-5px);
+}
+
+a:hover {
+    opacity: 0.9;
 }
