@@ -67,8 +67,8 @@
     <div class="parallax-container">
         <div class="fixed inset-0 z-5 flex flex-col items-center justify-center text-center text-pink-100"
             data-aos="fade-up">
-            <h1
-                class="font-bold text-[clamp(2.4rem,8vw,6rem)] hover:scale-105 duration-300 cursor-default leading-tight sm:leading-24" id="titulo">
+            <h1 class="font-bold text-[clamp(2.4rem,8vw,6rem)] hover:scale-105 duration-300 cursor-default leading-tight sm:leading-24"
+                id="titulo">
                 Gabriel Carvalho</h1>
             <h2 class="text-[clamp(1.2rem,3.2vw,2.4rem)] hover:scale-105 duration-300 cursor-default">Full-Stack
                 Developer
@@ -313,7 +313,15 @@
                 });
             });
         });
+        window.addEventListener('scroll', function () {
+            const scrollY = window.scrollY;
 
+            document.querySelectorAll('.layer[data-depth]').forEach(layer => {
+                const depth = parseFloat(layer.getAttribute('data-depth'));
+                const moveY = scrollY * depth;
+                layer.style.transform = `translate3d(0, ${moveY}px, 0)`;
+            });
+        });
 
     </script>
     <script>
