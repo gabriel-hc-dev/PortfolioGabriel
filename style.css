@@ -37,17 +37,6 @@ body::-webkit-scrollbar-thumb {
     /* cor do texto selecionado */
 }
 
-/* Efeito de digitação para o título */
-@keyframes typing {
-    from {
-        width: 0
-    }
-
-    to {
-        width: 100%
-    }
-}
-
 @keyframes typing {
     from {
         width: 0
@@ -145,8 +134,6 @@ body::-webkit-scrollbar-thumb {
     position: relative;
     z-index: 10;
     background: linear-gradient(160deg, #0b012b 0%, #11023d 40%, #1a0140 100%);
-
-
     color: white;
     padding: 2rem;
     min-height: 100vh;
@@ -178,4 +165,39 @@ a[aria-label]:hover {
 
 a:hover {
     opacity: 0.9;
+}
+@media (max-width: 768px) {
+    #titulo {
+        font-size: 1.5rem;
+    }
+
+    .scroll-content {
+        padding: 1rem;
+    }
+
+    .parallax-container {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .layer,
+    .stars-layer,
+    #sky,
+    #sun,
+    #mountains,
+    #ground {
+        background-size: contain;
+        background-position: center top;
+    }
+
+    /* Se o sol estiver grande demais, ajuste o tamanho */
+    #sun {
+        background-size: 150%;
+    }
+
+    /* Evita que partes do background fiquem cortadas */
+    body,
+    html {
+        overflow-x: hidden;
+    }
 }
