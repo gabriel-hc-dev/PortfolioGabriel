@@ -190,3 +190,9 @@ a[aria-label]:hover {
 a:hover {
     opacity: 0.9;
 }
+footer{
+    background:
+    radial-gradient(circle at 25% 30%, 
+        rgba(255, 78, 181, 0.12) 0%, 
+        transparent 40%),
+}
